@@ -1,9 +1,10 @@
 import React from "react";
+import ReactDOM from "react-dom/client"; // for React 18+
+import App from "./App";
 
-const App = () => {
-  return (
-    <p>I am learning React. My life is getting better.</p>
-  );
-};
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
